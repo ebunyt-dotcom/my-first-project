@@ -13,10 +13,11 @@
     color: gray;
     font-family: Arial, sans-serif;
 }
-.logo {
+.logo a {
     font-size: 25px;
     font-weight: bold;
     color: #333;
+    text-decoration: none;
 }
 .nav-container {
     justify-content: center;
