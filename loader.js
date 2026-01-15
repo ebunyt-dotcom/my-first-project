@@ -11,3 +11,9 @@
 }
 
 loadcomponent('header-placeholder', 'header.html')
+
+const loginbtn = document.querySelector('login-button')
+
+loginbtn.addEventListener('click', (e) => {
+    alert('Hello')
+})
