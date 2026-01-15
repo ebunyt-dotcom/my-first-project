@@ -2,6 +2,7 @@
     margin: 0;
     padding: 0;
     box-sizing: border-box;
+    font-family: 'Inter', sans-serif;
 }
 
 .navbar {
@@ -36,4 +37,102 @@
     justify-content: end;
     display: flex;
     gap: 15px;
+}
+/* Контейнер */
+.auth-buttons {
+    display: flex;
+    justify-content: flex-end;
+    align-items: center;
+    gap: 12px;
+}
+
+/* Общие базовые стили для обеих кнопок */
+.login-button, .register-button, .demo, .try {
+    padding: 10px 22px;
+    font-size: 14px;
+    font-weight: 600;
+    border-radius: 10px; /* Современное мягкое скругление */
+    cursor: pointer;
+    transition: all 0.25s ease;
+    outline: none;
+}
+
+/* Стиль для "Войти" (Второстепенная) */
+.login-button, .demo {
+    background-color: mediumpurple;
+    color: white; /* Спокойный серый */
+    border: 1px solid #d1d5db;
+}
+
+.login-button:hover, .demo:hover {
+    background-color: #f9fafb;
+    border-color: #9ca3af;
+    color: #111827;
+}
+
+/* Стиль для "Зарегистрироваться" (Главная) */
+.register-button, .try {
+    background-color: #2563eb; /* Яркий синий */
+    color: #ffffff;
+    border: none;
+    box-shadow: 0 4px 6px -1px rgba(37, 99, 235, 0.2);
+}
+
+.register-button:hover, .try {
+    background-color: #1d4ed8;
+    box-shadow: 0 10px 15px -3px rgba(37, 99, 235, 0.3);
+    transform: translateY(-1px);
+}
+
+.register-button:active, .try:active {
+    transform: translateY(0);
+}
+
+
+.main {
+    font-size: 48px;
+    color: black;
+    line-height: 1.1;
+    font-weight: 800;
+}
+.main2 {
+    font-size: 18px;
+    color: gray;
+    line-height: 1;
+}
+.ozon {
+    color: blue;
+}
+.wbspan {
+    color: rebeccapurple;
+}
+.hero {
+    display: grid;
+    grid-template-columns: 1fr;
+    gap: 24px;
+    max-width: 800px;
+    max-height: 400px;
+    padding: 80px 10%;
+}
+.try {
+
+}
+.buttonsgroup {
+    display: flex;
+    gap: 15px;
+    justify-items: start;
+    grid-template-columns: auto auto;
+}
+.whatcan{
+    display: grid;
+    grid-template-columns: auto;
+    justify-items: center;
+    margin-top: 50px;
+    font-size: 36px;
+}
+
+.heros {
+    background-color: #f4f7f9;
+    padding: 50px 0;
+    width: 100%;
 }
