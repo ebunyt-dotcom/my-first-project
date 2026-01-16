@@ -1,4 +1,5 @@
 ﻿// 1. Находим кнопку в HTML
+
 const demoBtn = document.querySelector('.demo');
 
 // 2. Вешаем событие "клик"
@@ -21,4 +22,9 @@ demoBtn.addEventListener('click', () => {
             console.error('Ошибка:', error);
             alert('Не удалось связаться с сервером. Ты запустил server.js?');
         });
+});
+document.addEventListener('click', (event) => {
+if (event.target.classList.contains('login-button')) {
+ window.location.href = 'login.html';
+}
 });

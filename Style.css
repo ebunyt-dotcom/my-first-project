@@ -132,7 +132,7 @@
 }
 
 .heros {
-    background-color: #f4f7f9;
+    background-color: #eeeeee;
     padding: 50px 0;
     width: 100%;
 }
@@ -216,4 +216,19 @@
 }
 .card button:hover {
     transform: scale(1.2);
+}
+.auth-forms {
+background-color: white;
+    padding: 120px;
+    border-radius: 10px;
+    width: 350px;
+    box-shadow: 0 4px 6px -1px rgba(37, 99, 235, 0.2);
+}
+.authcontainer {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    min-height: 100vh;
+    width: 100%;
+    background-color: #f4f4f4;
 }
