@@ -136,3 +136,84 @@
     padding: 50px 0;
     width: 100%;
 }
+.cards {
+    max-width: 1200px;
+    margin: 0 auto;
+    padding: 0 15px;
+
+}
+.cards-grid {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    gap: 30px;
+    padding-top: 25px;
+}
+.card {
+    background-color: white;
+    padding: 30px;
+    box-shadow: 0 4px 15px rgba(0,0,0,0.1);
+    display: grid;
+    transition: transform 0.5s ease;
+}
+
+.card h3 {
+    text-align: center;
+}
+.card p {
+    text-align: center;
+    padding-top: 20px;
+    padding-bottom: 200px;
+}
+.card:hover {
+    transform: scale(1.05);
+    box-shadow: 0 10px 20px rgba(0,0,0,0.2);
+
+}
+.card button {
+    background-color: mediumpurple;
+    border: none;
+    color: white;
+    padding: 15px 0px;
+    font-size: 16px;
+    font-weight: bold;
+    border-radius: 10px;
+    box-shadow: 0 4px 6px -1px rgba(37, 99, 235, 0.2);
+    margin-left: 75px;
+    margin-right: 75px;
+}
+
+.footer {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-top: 50px;
+    padding: 40px 50px; /* Добавили отступы по бокам для красоты */
+    background-color: #fff; /* Чтобы было видно границы */
+}
+.footer-columns {
+    display: flex;
+    gap: 30px;
+    margin-left: 25px;
+}
+.footer-bottom {
+    width: 100%;
+
+    border-top: 1px solid #f0f0f0; /* Тонкая линия над копирайтом (по желанию) */
+    padding-top: 20px;
+    text-align: center; /* Если хочешь, чтобы надпись была слева под логотипом */
+}
+
+.footer-bottom p {
+    font-size: 14px;
+    color: #999;
+    margin: 0;
+}
+.col p {
+    padding-top: 10px;
+}
+.card button {
+    transition: transform 0.5s ease;
+}
+.card button:hover {
+    transform: scale(1.2);
+}
